@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/_25sdp"
+        android:paddingEnd="@dimen/_25sdp"
+        android:id="@+id/rlMain"
+        android:background="@color/login_button">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:fontFamily="@font/worksans_regular"
+                android:gravity="center_vertical"
+                android:text="Learning quiz"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp" />
+
+
+
+            <TextView
+                android:id="@+id/txt_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/worksans_semibold"
+                android:text="What did you think about the learning video?"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_25sdp" />
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <Button
+                app:backgroundTint="@null"
+                android:id="@+id/btn_next"
+                android:layout_alignParentEnd="true"
+                android:paddingStart="@dimen/_30sdp"
+                android:paddingEnd="@dimen/_30sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_56sdp"
+                android:background="@drawable/shape_rounded_white"
+                android:drawableEnd="@drawable/right_arrow"
+                android:fontFamily="@font/worksans_regular"
+                android:gravity="center"
+                android:text="Next  "
+                android:textAllCaps="false"
+                android:textColor="@color/login_button"
+                android:textSize="@dimen/_15sdp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

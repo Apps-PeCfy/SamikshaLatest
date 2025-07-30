@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog"
+        android:layout_marginTop="-32dp"
+        android:background="@drawable/shape_rounded_white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtMental"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:fontFamily="@font/worksans_semibold"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:text="Mental Skills"
+            android:textAlignment="center"
+            android:textSize="@dimen/_18sdp" />
+
+
+        <TextView
+            android:id="@+id/txtInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMental"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:fontFamily="@font/worksans_regular"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:text="Samiksha"
+            android:textAlignment="center"
+            android:textSize="@dimen/_16sdp" />
+
+
+        <TextView
+            android:id="@+id/tvOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtInfo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:background="@drawable/shape_roundedbtn"
+            android:fontFamily="@font/worksans_bold"
+            android:paddingStart="@dimen/_60sdp"
+            android:paddingTop="@dimen/_7sdp"
+            android:paddingEnd="@dimen/_60sdp"
+            android:paddingBottom="@dimen/_7sdp"
+            android:text="OK"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgCloseViewInfo"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toEndOf="@+id/txt_label"
+        android:src="@drawable/ic_rounded_close"
+        android:visibility="gone" />
+
+    <com.samiksha.utils.RoundedImageView
+        android:id="@+id/dialog"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/dialog_info"
+        app:riv_corner_radius="@dimen/_59sdp"
+
+        app:riv_oval="false" />
+
+
+</RelativeLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.samiksha">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+   <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"  />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_AUDIO"/>
+
+
+    <application
+        android:name=".SamikshaApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/app_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup"
+        tools:targetApi="m">
+        <activity
+            android:name=".ui.downloads.DownloadedTrainingFeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.downloads.DownloadedTrainingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.drawer.subscription.CounsellingSessionPaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.drawer.subscription.SubscriptionProcessACtivity"
+            android:exported="false" />
+        <activity android:name=".ui.progressReport.progressreportweekly.ProgressReportWeekly" />
+        <activity android:name=".ui.totorial.MainScreen" />
+        <activity android:name=".ui.sportPsychology.reports.ReportsPdfActivity" />
+        <activity
+            android:name=".ui.sportPsychology.academyMembers.AcademyMembersActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".ui.drawer.privacypolicy.ContentPageActivity" />
+        <activity
+            android:name=".ui.search.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.progressReport.ProgressReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.drawer.mytraining.MyTrainingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.drawer.favourites.FavoritesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.infoAfterLearning.trainingFeedback.TrainingFeedback"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.infoAfterLearning.startTraining.TrainingStartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.infoAfterLearning.Learning.RewardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.dealingWithDistraction.subscription.SubscriptionTrainingACtivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.dealingWithDistraction.subscription.SubscriptionLearningACtivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.dealingWithDistraction.subscription.SubscriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.dealingWithDistraction.dealingWithDistractionsTraining.DealingWithDistractionTraining"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.dealingWithDistraction.dealingWithDistractionsLearning.DealingWithDistractionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.main.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.infoAfterLearning.finishLearning.FinishLearningActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.infoAfterLearning.feedback.LearningFeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.infoAfterLearning.questionstart.QuestionStartACtivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.infoAfterLearning.Learning.LearningActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/generalnotitle" />
+        <activity
+            android:name=".ui.infoAfterLearning.SportInformation.SportInformation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.informationScreen.informationFinish.InformationFinishActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.informationScreen.chooseUnderPressure.ChooseUnderPressureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.informationScreen.chooseGoals.ChooseGoalsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.informationScreen.chooseProfession.ChooseProfessionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.informationScreen.chooseSport.ChooseSportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.informationScreen.welcomeScreen.WelComeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.otp.OTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.register.RegisterACtivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="fr.maxcom.libmedia.apiKey"
+            android:value="J2ZSugiQKxCOMR8cdQihusdDXJTEeGinXGJQVGgzyGjhqXKx2gPsWHARecoiCdGvXO5yaw3pSlO/UCRp3XR/DWK5kaZi4R6mxQ3Uv9UD1PjNEdHw" />
+        <!--
+ <activity
+            android:name="com.razorpay.CheckoutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/CheckoutTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <data
+                    android:host="rzp.io"
+                    android:scheme="io.rzp" />
+            </intent-filter>
+        </activity>
+        -->
+        <receiver
+            android:name="com.razorpay.RzpTokenReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="rzp.device_token.share" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.MyDownloadBroadCastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.INPUT_METHOD_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <!--
+<receiver
+            android:name=".receiver.SmsReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.InstallReferrelReceiver"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        -->
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.samiksha.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

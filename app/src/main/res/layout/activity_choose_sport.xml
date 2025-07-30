@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_sport"
+    android:paddingStart="@dimen/_25sdp">
+
+    <ScrollView
+        android:id="@+id/homeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlBottom"
+        android:scrollbars="vertical"
+        android:visibility="visible">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="@dimen/_600sdp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvMAinHeading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:fontFamily="@font/worksans_bold"
+                    android:text="Choose your sport"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35sdp" />
+
+
+                <TextView
+                    android:id="@+id/txtChooseOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvMAinHeading"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:gravity="center_vertical"
+                    android:text="asasasasasa"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp" />
+
+
+                <!-- <androidx.recyclerview.widget.RecyclerView
+                     android:id="@+id/recycler_sport"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_below="@+id/txtChooseOne"
+                     android:scrollbars="horizontal"
+                     />
+        -->
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_sport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtChooseOne"
+                    android:layout_marginTop="@dimen/_10sdp" />
+
+
+            </RelativeLayout>
+
+
+        </HorizontalScrollView>
+
+
+
+    </ScrollView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_25sdp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_56sdp"
+            android:background="@drawable/shape_rounded_white_border"
+            android:drawableStart="@drawable/left_arrow"
+            android:fontFamily="@font/worksans_regular"
+            android:gravity="center"
+            android:paddingStart="@dimen/_30sdp"
+            android:paddingEnd="@dimen/_30sdp"
+            android:text="   Back"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            app:backgroundTint="@null" />
+
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_56sdp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/shape_rounded_white"
+            android:drawableEnd="@drawable/right_arrow"
+            android:fontFamily="@font/worksans_regular"
+            android:gravity="center"
+            android:paddingStart="@dimen/_30sdp"
+            android:paddingEnd="@dimen/_30sdp"
+            android:text="Next  "
+            android:textAllCaps="false"
+            android:textColor="@color/login_button"
+            android:textSize="@dimen/_15sdp"
+            app:backgroundTint="@null" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

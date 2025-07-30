@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/llmyaccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_8sdp">
+
+        <ImageView
+            android:id="@+id/ivExpand"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/up_arrow"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_toStartOf="@id/ivExpand"
+            android:fontFamily="@font/worksans_semibold"
+            android:text="Lorem Ipsum is simply "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvSubQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_40sdp"
+        android:text="fdfdf sdwd sds sdsdsdsdsd sw gr dfdsqsq wwwd s w e"
+        android:fontFamily="@font/worksans_regular"
+        android:textColor="@color/login_button"
+        android:textSize="@dimen/_14sdp"
+        android:visibility="visible" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

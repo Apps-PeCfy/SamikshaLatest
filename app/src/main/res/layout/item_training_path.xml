@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="@dimen/_3sdp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_15sdp"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/img_next"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_15sdp">
+
+            <RelativeLayout
+                android:paddingEnd="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:fontFamily="@font/worksans_bold"
+                    android:gravity="center_vertical"
+                    android:text="Dealing with distractions"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_18sp" />
+
+                <ImageView
+                    android:id="@+id/img_timing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_toEndOf="@+id/txt_name" />
+
+
+                <ImageView
+                    android:id="@+id/img_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:src="@mipmap/ic_delete" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tvTapHere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:fontFamily="@font/worksans_regular"
+                android:text="Tap here to train for this module."
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14sp" />
+
+
+            <RelativeLayout
+                android:paddingEnd="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_2sdp" />
+
+                <TextView
+                    android:id="@+id/txt_repeat"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/btn_rounded_shape"
+                    android:fontFamily="@font/worksans_regular"
+                    android:gravity="center"
+                    android:text="Repeat"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_12sp"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:id="@+id/llReport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgReport"
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_report" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgReport"
+                        android:background="@drawable/shape_rounded_white_border"
+                        android:fontFamily="@font/worksans_regular"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_3sdp"
+                        android:text="Reward"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_next"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/right_arrow_black"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+

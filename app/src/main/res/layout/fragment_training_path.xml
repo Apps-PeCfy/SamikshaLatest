@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+
+    <TextView
+        android:id="@+id/txtUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:fontFamily="@font/worksans_bold"
+        android:paddingBottom="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_18sp"
+        android:visibility="gone" />
+
+
+    <Spinner
+        android:id="@+id/spnMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_40sdp"
+        android:paddingEnd="@dimen/_2sdp"
+        android:spinnerMode="dropdown"
+
+        android:textColor="@color/colorGreyText" />
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txt_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/worksans_bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_18sp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_calender"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="@font/worksans_regular"
+            android:id="@+id/txt_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_previous"
+            android:padding="5dp"
+            android:textSize="@dimen/text_20sp"
+            android:layout_centerVertical="true" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_toEndOf="@id/txt_prev"
+            android:layout_toStartOf="@id/txt_next"
+            android:id="@+id/recycler_view_dates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:fontFamily="@font/worksans_regular"
+            android:id="@+id/txt_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/str_prev"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:textSize="@dimen/text_20sp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlTraining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/imgTraining"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/img_training_path" />
+
+
+        <LinearLayout
+            android:id="@+id/llminute_count"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_toEndOf="@+id/imgTraining"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/worksans_bold"
+                android:gravity="center_vertical"
+                android:text="Every minute counts!"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/worksans_regular"
+                android:text="You can redeem your training minutes to get exclusive offers"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llminute_count"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/imgTraining"
+            android:background="@drawable/shape_rounded_empty"
+            android:fontFamily="@font/worksans_regular"
+            android:padding="@dimen/_10sdp"
+            android:text="Redeem minutes"
+            android:textColor="@color/login_button"
+            android:textSize="@dimen/_16sdp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <TextView
+            android:id="@+id/txt_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/worksans_bold"
+            android:text="Your mental skills"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_16sp" />
+
+        <ImageView
+            android:id="@+id/imgViewInfo"
+            android:layout_width="@dimen/_17sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@+id/txt_label"
+            android:src="@drawable/view_info" />
+
+
+        <TextView
+            android:id="@+id/tvNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_label"
+            android:fontFamily="@font/worksans_regular"
+             />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNote"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/no_training_path"/>
+            <TextView
+                android:id="@+id/txt_no_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/worksans_semibold"
+                android:gravity="center"
+                android:text="No training currently added to your training path"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_18sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

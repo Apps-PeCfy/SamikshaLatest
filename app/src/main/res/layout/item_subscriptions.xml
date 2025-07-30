@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/crd_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="12dp"
+    android:elevation="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llSubscription"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="30dp">
+
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/text_14sp"
+            android:fontFamily="@font/worksans_regular"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txt_price"
+            android:fontFamily="@font/worksans_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="₹10,500"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+
+        <TextView
+            android:id="@+id/txt_duration"
+            android:fontFamily="@font/worksans_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="for 12 months"
+            android:textSize="@dimen/text_18sp"
+            android:textColor="@color/light_purple" />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

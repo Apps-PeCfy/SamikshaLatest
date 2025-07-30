@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/worksans_semibold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tvSessionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/worksans_semibold"
+            android:text="Taster session"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_18sp" />
+
+        <TextView
+            android:id="@+id/tvEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_toEndOf="@+id/tvSessionName"
+            android:background="@drawable/btn_rounded_shape"
+            android:fontFamily="@font/worksans_regular"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_25sdp"
+            android:paddingEnd="@dimen/_25sdp"
+            android:text="Edit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="visible" />
+
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvJoin"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/shape_rounded_orange"
+            android:fontFamily="@font/worksans_regular"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_25sdp"
+            android:paddingEnd="@dimen/_25sdp"
+            android:text="Join Now"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtSessionScale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:fontFamily="@font/worksans_regular"
+        android:text="status"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16sp" />
+
+ <TextView
+        android:id="@+id/txtModule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:fontFamily="@font/worksans_regular"
+        android:text="module"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16sp" />
+
+
+    <TextView
+
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:fontFamily="@font/worksans_regular"
+        android:text="startDate"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16sp" />
+
+    <TextView
+        android:id="@+id/txtSessionDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/worksans_regular"
+        android:text="GoalName"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16sp" />
+
+
+    <TextView
+        android:id="@+id/txtexpertCounsellor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:fontFamily="@font/worksans_regular"
+        android:text="counsellor"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txtcounsellor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:fontFamily="@font/worksans_regular"
+        android:text="expertConcellor"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16sp" />
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llmain">
+
+
+        <TextView
+
+            android:id="@+id/editComment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/roundedcorner_contact_us"
+            android:fontFamily="@font/worksans_regular"
+            android:gravity="top"
+            android:hint="Comments"
+            android:inputType="textCapSentences|textMultiLine|textNoSuggestions"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:textColor="@color/colorGreyText"
+            android:textColorHint="@color/colorGreyText"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/commentSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editComment"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="@font/worksans_regular"
+            android:text="Submit" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <View
+        android:id="@+id/tvView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/contactUsGrey" />
+
+
+
+
+
+</LinearLayout>
+

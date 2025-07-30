@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/login_button">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:fontFamily="@font/worksans_bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_25sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/worksans_bold"
+                android:gravity="center_vertical"
+                android:text="Continue training"
+                android:textColor="#FBDB3A"
+                android:textSize="@dimen/_40sdp" />
+
+            <TextView
+                android:id="@+id/txt_skill_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/worksans_regular"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp" />
+
+            <Button
+                android:id="@+id/btnStartTraining"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_56sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/shape_rounded_white"
+                android:drawableEnd="@drawable/right_arrow"
+                android:fontFamily="@font/worksans_regular"
+                android:gravity="center"
+                android:paddingStart="@dimen/_30sdp"
+                android:paddingEnd="@dimen/_30sdp"
+                android:text="Start training "
+                android:textAllCaps="false"
+                android:textColor="@color/login_button"
+                android:textSize="@dimen/_15sdp"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBackToModule"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_56sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/shape_rounded_white_border"
+            android:drawableStart="@drawable/left_arrow"
+            android:drawablePadding="@dimen/_10sdp"
+            android:fontFamily="@font/worksans_regular"
+            android:gravity="center"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:text="Back to the module"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            app:backgroundTint="@null" />
+    </RelativeLayout>
+</layout>

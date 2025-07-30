@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/login_button"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            app:backgroundTint="@null"
+            android:id="@+id/btnModules"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/worksans_regular"
+            android:background="@color/login_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Mental Skills"
+            android:textColor="@color/ratingBar"
+            android:textAllCaps="false"
+            android:layout_weight="1"/>
+
+        <Button
+            app:backgroundTint="@null"
+            android:id="@+id/btnDailyExercise"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/worksans_regular"
+            android:background="@color/login_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Daily exercise"
+            android:textColor="@color/favBtn"
+            android:textAllCaps="false"
+            android:layout_weight="1"/>
+
+        <Button
+            app:backgroundTint="@null"
+            android:id="@+id/btnYoga"
+            android:textColor="#ABABAB"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/worksans_regular"
+            android:background="@color/login_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Yoga"
+            android:textAllCaps="false"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <GridView
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/recycler_favourties"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="@dimen/_20sdp"
+        android:horizontalSpacing="@dimen/_10sdp"
+        android:numColumns="2"/>
+
+
+</LinearLayout>

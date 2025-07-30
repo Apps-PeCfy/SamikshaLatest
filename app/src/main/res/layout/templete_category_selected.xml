@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/llPreference"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rounded_white"
+    android:layout_marginBottom="@dimen/_20sdp"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_15sdp">
+
+
+    <ImageView
+        android:id="@+id/iv_vehical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/p_img"
+        android:scaleType="fitCenter" />
+
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/worksans_regular"
+        android:text="Dealing with distractions"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:fontFamily="@font/worksans_regular"
+            android:text="Free"
+            android:textColor="#7A7ACC"
+            android:textSize="@dimen/_16sdp" />
+
+
+        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/tvRating"
+            app:srb_isIndicator="true"
+            app:srb_borderColor="@color/ratingBar"
+            app:srb_drawBorderEnabled="true"
+            app:srb_fillColor="@color/ratingBar"
+            app:srb_rating="5"
+            app:srb_starSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/tvRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:fontFamily="@font/worksans_regular"
+            android:text="12345"
+            android:textColor="#DE000000"
+            android:textSize="@dimen/_16sdp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

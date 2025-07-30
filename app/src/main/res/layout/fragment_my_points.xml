@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rlRedeemPoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:id="@+id/ll_training_duration"
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="@dimen/_75sdp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/img_rewards_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTotalRedeemPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans_bold"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans_regular"
+                android:gravity="center"
+                android:text="Reward\npoints"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvRedeemPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llminute_count"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_toEndOf="@+id/ll_training_duration"
+            android:background="@drawable/shape_rounded_empty"
+            android:fontFamily="@font/worksans_regular"
+            android:padding="@dimen/_10sdp"
+            android:text="Redeem Points"
+            android:textColor="@color/login_button"
+            android:textSize="@dimen/_16sdp" />
+
+
+        <LinearLayout
+            android:id="@+id/llminute_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_toEndOf="@+id/ll_training_duration"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:fontFamily="@font/worksans_regular"
+                android:text="You can redeem your reward points to get exclusive coupons"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlRedeemPoints"
+        android:layout_marginTop="@dimen/_10sdp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_myPoints"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+

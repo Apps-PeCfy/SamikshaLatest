@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_welcome">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvWelCome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:fontFamily="@font/worksans_bold"
+            android:text="Welcome,Janki"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25sdp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/worksans_bold"
+            android:gravity="center_vertical"
+            android:text="Before we get started"
+            android:textColor="#FBDB3A"
+            android:textSize="@dimen/_44sdp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/worksans_regular"
+            android:gravity="center_vertical"
+            android:text="Answer a few questions to help us customize your mental skills training for you"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+
+        <Button
+            app:backgroundTint="@null"
+            android:id="@+id/btnGetStarted"
+            android:paddingStart="@dimen/_30sdp"
+            android:paddingEnd="@dimen/_30sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_56sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/shape_rounded_white"
+            android:drawableEnd="@drawable/right_arrow"
+            android:fontFamily="@font/worksans_regular"
+            android:gravity="center"
+            android:text="Get started "
+            android:textAllCaps="false"
+            android:textColor="@color/login_button"
+            android:textSize="@dimen/_15sdp" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        app:backgroundTint="@null"
+        android:id="@+id/btnNotUser"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_56sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/shape_rounded_white_border"
+        android:fontFamily="@font/worksans_regular"
+        android:gravity="center"
+        android:text="Not Janki? Login as a different user"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp" />
+
+
+</RelativeLayout>

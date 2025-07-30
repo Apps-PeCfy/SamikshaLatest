@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Samiksha.iml" filepath="$PROJECT_DIR$/Samiksha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Samiksha.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Samiksha.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Samiksha.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Samiksha.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Samiksha.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Samiksha.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Samiksha.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Samiksha.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.Samiksha.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.Samiksha.app.androidTest.iml" />
+    </modules>
+  </component>
+</project>

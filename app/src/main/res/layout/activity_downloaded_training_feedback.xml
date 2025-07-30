@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/login_button">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_above="@id/btn_submit">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans_bold"
+                android:gravity="center_vertical"
+                android:layout_margin="20dp"
+                android:text="Training Feedback"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp" />
+
+
+
+            <TextView
+                android:id="@+id/txt_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/worksans_bold"
+                android:gravity="left"
+                android:text="How are you feeling?"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_25sdp"
+                android:layout_marginTop="20dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_marginTop="70dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingEnd="@dimen/_15sdp"
+                />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_shape"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/worksans_bold"
+            android:gravity="center"
+            android:paddingStart="@dimen/_75sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_75sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:layout_margin="20dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/text_18sp" />
+
+
+
+
+    </RelativeLayout>
+</layout>

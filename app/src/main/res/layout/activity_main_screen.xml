@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_dot"
+        />
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layout_dot"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:fontFamily="@font/worksans_regular"
+        android:gravity="center_vertical"
+        android:onClick="skip"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="5dp"
+        android:text="Skip"
+        android:textColor="@color/login_button"
+        android:textSize="@dimen/text_16sp" />
+
+    <TextView
+
+        android:id="@+id/tvGetStarted"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_rounded_white"
+        android:backgroundTint="@color/login_button"
+        android:fontFamily="@font/worksans_semibold"
+        android:gravity="center"
+        android:onClick="getStarted"
+        android:text="Get Started"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_18sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

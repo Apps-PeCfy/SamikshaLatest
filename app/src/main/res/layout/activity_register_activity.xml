@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:fontFamily="@font/worksans_bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sdp" />
+
+
+        <TextView
+            android:id="@+id/tvReward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/worksans_semibold"
+            android:text="@string/new_user_reward_txt"
+            android:textColor="#666666"
+            android:textSize="@dimen/_14sdp" />
+
+
+        <LinearLayout
+            android:id="@+id/loginBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/tvMobileNo_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans_bold"
+                android:text="Enter your mobile number to begin"
+                android:textColor="#666666"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="visible" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ccpDialog_keyboardAutoPopup="false"
+                    app:ccp_autoFormatNumber="false"
+                    app:ccp_clickable="true"
+                    app:ccp_countryPreference="in"
+                    app:ccp_defaultNameCode="IN"
+                    app:ccp_textSize="@dimen/_15sdp" />
+
+                <LinearLayout
+                    android:id="@+id/llNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/ccp1"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/edtUserMobileNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="true"
+                        android:fontFamily="@font/worksans_regular"
+                        android:hint="Mobile Number"
+                        android:includeFontPadding="false"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:nextFocusDown="@id/btnLogin"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:textSize="@dimen/_15sdp">
+
+                        <requestFocus />
+                    </EditText>
+
+
+                    <TextView
+                        android:id="@+id/tvPhoneNumberError"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-8dp"
+                        android:layout_marginEnd="@dimen/_18sdp"
+                        android:fontFamily="@font/worksans_regular"
+
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txtcreateAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llNumber"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:gravity="center_vertical"
+                    android:text="An OTP will be sent to this number to sign up/login to your account."
+                    android:textColor="#999999"
+                    android:textSize="@dimen/_14sdp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/registerbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <EditText
+
+                    android:id="@+id/edtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:fontFamily="@font/worksans_regular"
+                    android:hint="First Name"
+                    android:inputType="textCapWords"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp">
+
+                    <requestFocus />
+                </EditText>
+
+
+                <TextView
+                    android:id="@+id/tvedtNameError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginTop="-8dp"
+                    android:layout_marginEnd="@dimen/_18sdp"
+                    android:fontFamily="@font/worksans_regular"
+
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/edtlastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/worksans_regular"
+                    android:hint="Last Name"
+                    android:inputType="textCapWords"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp" />
+
+
+                <TextView
+                    android:id="@+id/tvedtlastNameError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginTop="-8dp"
+                    android:layout_marginEnd="@dimen/_18sdp"
+                    android:fontFamily="@font/worksans_regular"
+
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/edtEmailId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/worksans_regular"
+                    android:hint="Email ID"
+                    android:inputType="textEmailAddress"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp" />
+
+
+                <TextView
+                    android:id="@+id/tvedtEmailIdError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginTop="-8dp"
+                    android:layout_marginEnd="@dimen/_18sdp"
+                    android:fontFamily="@font/worksans_regular"
+
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlmNumber"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <com.hbb20.CountryCodePicker
+                            android:id="@+id/ccp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            app:ccpDialog_keyboardAutoPopup="false"
+                            app:ccp_autoFormatNumber="false"
+                            app:ccp_countryPreference="in"
+                            app:ccp_defaultNameCode="IN"
+                            app:ccp_textSize="@dimen/_15sdp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/ccp"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/edtphonenumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@+id/ccp"
+                                android:fontFamily="@font/worksans_regular"
+                                android:hint="Mobile Number"
+                                android:inputType="number"
+                                android:maxLength="11"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:paddingBottom="@dimen/_15sdp"
+                                android:textSize="@dimen/_15sdp" />
+
+
+                            <TextView
+                                android:id="@+id/tvedtphonenumberError"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/edtphonenumber"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:layout_marginTop="-8dp"
+                                android:layout_marginEnd="@dimen/_18sdp"
+                                android:layout_toEndOf="@+id/ccp"
+                                android:fontFamily="@font/worksans_regular"
+
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/_12sdp"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/otpVerification"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rlmNumber"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/worksans_regular"
+                        android:gravity="center_vertical"
+                        android:text="An OTP will be sent to this number for verification"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/_14sdp"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <EditText
+
+                    android:id="@+id/edtState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/worksans_regular"
+                    android:hint="State"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp" />
+
+
+                <TextView
+                    android:id="@+id/tvedtStateError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_18sdp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RadioButton
+                    android:id="@+id/radioButtonmale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:fontFamily="@font/worksans_regular"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonfemale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/worksans_regular"
+                    android:text="Female" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOther"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/worksans_regular"
+                    android:text="Other" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_56sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/shape_roundedbtn"
+            android:fontFamily="@font/worksans_regular"
+            android:gravity="center"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            app:backgroundTint="@null" />
+
+
+        <TextView
+            android:id="@+id/tvUserDecision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/worksans_regular"
+            android:gravity="center_horizontal"
+            android:text="Already a member? Login here"
+            android:textColor="@color/login_button"
+            android:textSize="@dimen/_16sdp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:fontFamily="@font/worksans_regular"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="@string/str_disclaimer"/>
+
+
+</RelativeLayout>

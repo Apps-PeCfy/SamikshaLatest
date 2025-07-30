@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:elevation="5dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_15sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_Module"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_210sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/dealing_with_destraction"
+                android:scaleType="fitXY" />
+
+
+
+            <TextView
+                android:id="@+id/tvModuleType"
+                android:fontFamily="@font/worksans_semibold"
+                android:layout_above="@id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FBDB3A"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:fontFamily="@font/worksans_semibold"
+                android:layout_alignBottom="@+id/iv_Module"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_14sp"
+                android:textColor="#FBDB3A"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_10sdp" />
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:layout_alignEnd="@+id/iv_Module"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivTime"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:background="@drawable/iv_evening"
+                    android:scaleType="fitCenter" />
+
+
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:id="@+id/tvTime"
+                    android:fontFamily="@font/worksans_semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#FBDB3A"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/img_favorites"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/worksans_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <ImageView
+                android:id="@+id/img_favorites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_favorite_normal"
+                android:scaleType="centerCrop"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+
+            <TextView
+                android:id="@+id/tvFreeOrPaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/worksans_regular"
+                android:text="Free"
+                android:textColor="#7A7ACC"
+                android:textSize="@dimen/_16sdp" />
+
+
+            <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/tvRating"
+                app:srb_isIndicator="true"
+                app:srb_borderColor="@color/ratingBar"
+                app:srb_drawBorderEnabled="true"
+                app:srb_fillColor="@color/ratingBar"
+                app:srb_rating="5"
+                app:srb_starSize="15dp" />
+
+
+            <TextView
+                android:id="@+id/tvRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:fontFamily="@font/worksans_regular"
+                android:textColor="#DE000000"
+                android:textSize="@dimen/_16sdp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvUserNumber"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp"
+    android:fontFamily="@font/worksans_regular"
+    android:gravity="center_vertical"
+    android:includeFontPadding="false"
+    android:text="kiran"
+    android:paddingStart="@dimen/_20sdp"
+    android:textSize="@dimen/_16sdp"
+    android:textColor="@color/black"
+    android:maxLines="1"
+    />

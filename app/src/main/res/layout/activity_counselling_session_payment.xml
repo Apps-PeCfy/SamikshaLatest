@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:background="@color/login_button"
+        android:fontFamily="@font/worksans_bold"
+        android:gravity="center_vertical"
+        app:buttonGravity="center_vertical"
+        app:title=""
+        app:titleTextColor="@color/white"></androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_home"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_20sdp">
+
+        <LinearLayout
+            android:id="@+id/llSubscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="@color/login_button"
+                app:cardCornerRadius="@dimen/_15sdp"
+                app:cardElevation="@dimen/_1sdp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="@dimen/_10sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_15sdp">
+
+                    <TextView
+                        android:id="@+id/tvPremium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/worksans_bold"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_18sdp" />
+
+                    <TextView
+                        android:id="@+id/tvSubscriptiontxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvPremium"
+                        android:fontFamily="@font/worksans_semibold"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/tvSellingPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/worksans_bold"
+                        android:gravity="end"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/stateCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="@dimen/_15sdp"
+                app:cardElevation="@dimen/_1sdp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/tvState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/worksans_bold"
+                    android:hint="Select State"
+                    android:textSize="@dimen/_18sdp" />
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/txtState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginBottom="-5dp"
+                android:fontFamily="@font/worksans_regular"
+                android:text="State"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone" />
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="@dimen/_15sdp"
+                app:cardElevation="@dimen/_1sdp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/tvApplyCoupan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/worksans_bold"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Apply Coupon"
+                    android:textSize="@dimen/_18sdp" />
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:id="@+id/cardDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:fontFamily="@font/worksans_bold"
+                    android:text="Cart details"
+                    android:textSize="@dimen/_18sdp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:fontFamily="@font/worksans_semibold"
+                            android:text="Total Purchases"
+                            android:textSize="@dimen/_18sdp" />
+
+                        <TextView
+                            android:id="@+id/tvIGST"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:fontFamily="@font/worksans_semibold"
+                            android:text="SGST (9%)"
+                            android:textSize="@dimen/_18sdp" />
+
+                        <TextView
+                            android:id="@+id/tvSGST"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:fontFamily="@font/worksans_semibold"
+                            android:text="CGST (9%)"
+                            android:textSize="@dimen/_18sdp" />
+
+                        <TextView
+                            android:id="@+id/tvGSTandTaxes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:fontFamily="@font/worksans_semibold"
+                            android:text="IGST (18%)"
+                            android:textSize="@dimen/_18sdp" />
+
+
+                        <TextView
+                            android:id="@+id/tvCoupan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:fontFamily="@font/worksans_semibold"
+                            android:text="Coupon"
+                            android:textSize="@dimen/_18sdp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvTotalPurchase"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:fontFamily="@font/worksans_semibold"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:text="Rs 2000"
+                            android:textSize="@dimen/_18sdp" />
+
+                        <TextView
+                            android:id="@+id/tvAmtIGST"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:fontFamily="@font/worksans_semibold"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:text="Rs 150"
+                            android:textSize="@dimen/_18sdp" />
+
+                        <TextView
+                            android:id="@+id/tvAmtSGST"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:fontFamily="@font/worksans_semibold"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:text="Rs 150"
+                            android:textSize="@dimen/_18sdp" />
+
+                        <TextView
+                            android:id="@+id/tvAmtGSTandTaxes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:fontFamily="@font/worksans_semibold"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:text="Rs 150"
+                            android:textSize="@dimen/_18sdp" />
+
+
+                        <TextView
+                            android:id="@+id/tvAmtCoupan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:fontFamily="@font/worksans_semibold"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:text="- Rs 150"
+                            android:textSize="@dimen/_18sdp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/contactUsGrey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:fontFamily="@font/worksans_bold"
+                            android:text="Total Payable"
+                            android:textSize="@dimen/_18sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/totalPayable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:fontFamily="@font/worksans_bold"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:text="Rs 1800"
+                            android:textSize="@dimen/_18sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/contactUsGrey" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnProceed"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:background="@drawable/shape_roundedbtn"
+            android:fontFamily="@font/worksans_regular"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingStart="@dimen/_80sdp"
+            android:paddingEnd="@dimen/_80sdp"
+            android:text="Proceed to Pay"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp"
+            app:backgroundTint="@null" />
+    </RelativeLayout>
+</RelativeLayout>

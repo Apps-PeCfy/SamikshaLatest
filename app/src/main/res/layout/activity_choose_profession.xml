@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:background="@drawable/bg_professional_level">
+
+    <ScrollView
+        android:id="@+id/homeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlBottom"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:fontFamily="@font/worksans_bold"
+                android:text="Select your current professional level"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_33sdp" />
+
+
+
+
+
+
+            <TextView
+                android:text="asssdsd"
+                android:layout_below="@+id/tvHeading"
+                android:id="@+id/txtChooseOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/worksans_regular"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp" />
+
+            <!-- <HorizontalScrollView
+                 xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_below="@+id/txtChooseOne">
+
+                 <androidx.recyclerview.widget.RecyclerView
+                     android:id="@+id/recycler_profession"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:scrollbars="horizontal"
+                     android:scrollbarStyle="outsideInset"/>
+
+
+             </HorizontalScrollView>
+     -->
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_profession"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txtChooseOne"
+                android:layout_marginTop="@dimen/_10sdp"
+
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            app:backgroundTint="@null"
+            android:id="@+id/btnBack"
+            android:paddingStart="@dimen/_30sdp"
+            android:paddingEnd="@dimen/_30sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_56sdp"
+            android:drawableStart="@drawable/left_arrow"
+            android:background="@drawable/shape_rounded_white_border"
+            android:fontFamily="@font/worksans_regular"
+            android:gravity="center"
+            android:text="   Back"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+
+        <Button
+            app:backgroundTint="@null"
+            android:id="@+id/btnNext"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="@dimen/_30sdp"
+            android:paddingEnd="@dimen/_30sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_56sdp"
+            android:background="@drawable/shape_rounded_white"
+            android:drawableEnd="@drawable/right_arrow"
+            android:fontFamily="@font/worksans_regular"
+            android:gravity="center"
+            android:text="Next  "
+            android:textAllCaps="false"
+            android:textColor="@color/login_button"
+            android:textSize="@dimen/_15sdp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

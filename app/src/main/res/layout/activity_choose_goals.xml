@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="@dimen/_25sdp"
+    android:paddingEnd="@dimen/_25sdp"
+    android:background="@drawable/bg_goal_select">
+
+
+    <RelativeLayout
+        android:layout_above="@+id/rlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvGoalsHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:fontFamily="@font/worksans_bold"
+            android:text="What are your goals?"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_35sdp" />
+
+
+
+
+
+
+        <TextView
+
+            android:layout_below="@+id/tvGoalsHeading"
+            android:id="@+id/txtAnyThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/worksans_regular"
+            android:gravity="center_vertical"
+            android:text="dsdsdsds"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/recycler_goals"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txtAnyThree"
+                android:scrollbars="horizontal"
+                android:scrollbarStyle="outsideInset"/>
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            app:backgroundTint="@null"
+            android:id="@+id/btnBack"
+            android:paddingStart="@dimen/_30sdp"
+            android:paddingEnd="@dimen/_30sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_56sdp"
+            android:drawableStart="@drawable/left_arrow"
+            android:background="@drawable/shape_rounded_white_border"
+            android:fontFamily="@font/worksans_regular"
+            android:gravity="center"
+            android:text="   Back"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+
+        <Button
+            app:backgroundTint="@null"
+            android:id="@+id/btnFinish"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="@dimen/_30sdp"
+            android:paddingEnd="@dimen/_30sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_56sdp"
+            android:background="@drawable/shape_rounded_white"
+            android:drawableEnd="@drawable/right_arrow"
+            android:fontFamily="@font/worksans_regular"
+            android:gravity="center"
+            android:text="Finish  "
+            android:textAllCaps="false"
+            android:textColor="@color/login_button"
+            android:textSize="@dimen/_15sdp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

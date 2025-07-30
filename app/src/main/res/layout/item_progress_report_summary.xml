@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/_10sdp"
+            android:fontFamily="@font/worksans_semibold"
+            android:layout_gravity="center_vertical"
+            android:text="Learning Score"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp" />
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans_bold"
+                android:text="4.5"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/img_emoji"
+                android:layout_toEndOf="@id/txt_score"
+                android:progress="5"
+                android:max="10"
+                app:indicatorColor="@color/colorPrimary"
+                app:trackThickness="12dp"
+                app:trackCornerRadius="12dp"
+                app:trackColor="@color/colorLightGray" />
+
+            <ImageView
+                android:id="@+id/img_emoji"
+                android:layout_alignParentEnd="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/img_focus" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/_10sdp"
+            android:fontFamily="@font/worksans_regular"
+            android:layout_gravity="center_vertical"
+            android:text="Progress Quiz Score"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp" />
+
+
+
+        <TextView
+            android:id="@+id/txt_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:fontFamily="@font/worksans_regular"
+            android:text="Tap here to view your progress"
+            android:textColor="@color/colorGreyText"
+            android:textSize="@dimen/_14sdp" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "94812313300",
+    "project_id": "samiksha-32d10",
+    "storage_bucket": "samiksha-32d10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94812313300:android:29ed95eb6ff413ef950d41",
+        "android_client_info": {
+          "package_name": "com.samiksha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94812313300-4d3lnrui4frl2v91c7tql5selcm8je90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbzLPlzJvGqADAA38ubLxbp3jiQUuPP9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94812313300-4d3lnrui4frl2v91c7tql5selcm8je90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

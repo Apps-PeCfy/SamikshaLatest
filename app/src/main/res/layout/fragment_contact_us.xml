@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp">
+
+
+        <LinearLayout
+            android:id="@+id/llshowData"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/tvhideShow"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_3sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:background="@drawable/shape_rounded_empty" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:fontFamily="@font/worksans_regular"
+                android:gravity="left"
+                android:text="If you have any questions or need clarifications or have suggestions, please do write to us. We will get back to you at the earliest possible."
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
+
+
+            <EditText
+                android:id="@+id/editReview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/roundedcorner_contact_us"
+                android:fontFamily="@font/worksans_regular"
+                android:gravity="top"
+                android:hint="Your message"
+                android:inputType="textCapSentences|textMultiLine|textNoSuggestions"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:textColor="@color/colorGreyText"
+                android:textColorHint="@color/colorGreyText"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </LinearLayout>
+
+
+        <Button
+
+            android:id="@+id/btnSubmitContactUs"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:background="@drawable/shape_roundedbtn"
+            android:fontFamily="@font/worksans_regular"
+            android:gravity="center"
+            android:paddingStart="@dimen/_50sdp"
+            android:paddingEnd="@dimen/_50sdp"
+            android:includeFontPadding="false"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_14sdp"
+
+            app:backgroundTint="@null" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
