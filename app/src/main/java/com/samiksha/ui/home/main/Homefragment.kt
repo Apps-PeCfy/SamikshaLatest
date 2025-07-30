@@ -1171,6 +1171,7 @@ class Homefragment : Fragment(), PreferencesAdapter.IClickListener,
 
     }
 
+    
 
     private fun preferenceHorizontal(CategortArrayListpreference: List<CategoriesResponsePOJO.DataItem>) {
         binding.recyclerViewPreferences.layoutManager = LinearLayoutManager(
