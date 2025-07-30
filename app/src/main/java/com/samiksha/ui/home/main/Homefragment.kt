@@ -70,6 +70,7 @@ class Homefragment : Fragment(), PreferencesAdapter.IClickListener,
     PaymentResultWithDataListener {
 
 
+
     private var categortArrayList: List<AllCategoriesResponsePOJO.DataItem> = ArrayList()
     private var preferenceCategortArrayList: List<CategoriesResponsePOJO.DataItem> = ArrayList()
     private var myTrainingCategortArrayList: List<CategoriesResponsePOJO.DataItem> = ArrayList()
@@ -1171,7 +1172,7 @@ class Homefragment : Fragment(), PreferencesAdapter.IClickListener,
 
     }
 
-    
+
 
     private fun preferenceHorizontal(CategortArrayListpreference: List<CategoriesResponsePOJO.DataItem>) {
         binding.recyclerViewPreferences.layoutManager = LinearLayoutManager(
