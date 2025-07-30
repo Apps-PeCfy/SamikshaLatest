@@ -35,6 +35,7 @@ class CategortAdapter(
         return CategoryViewHolder(view)
     }
 
+
     @SuppressLint("ResourceAsColor")
     override fun onBindViewHolder(viewHolder: CategoryViewHolder, position: Int) {
         myHolder = viewHolder

@@ -64,6 +64,7 @@ import retrofit2.Callback
 import retrofit2.Response
 import java.io.IOException
 
+
 class Homefragment : Fragment(), PreferencesAdapter.IClickListener,
     CategortAdapter.IClickListener, CategorySelectedAdapter.IClickListener, IHomeView,
     MoreSkillAdapter.IClickListener, MyCompletedAdapter.MyCompleteClickListener,
